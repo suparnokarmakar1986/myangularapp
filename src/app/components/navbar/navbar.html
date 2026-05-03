@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <button class="menu-toggle" (click)="toggleSidebar()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" fill="var(--blue-500)"/>
+        <path d="M2 17l10 5 10-5" stroke="var(--blue-500)" stroke-width="2" fill="none"/>
+        <path d="M2 12l10 5 10-5" stroke="var(--blue-400)" stroke-width="2" fill="none"/>
+      </svg>
+      <span class="logo-text">MyAngularApp</span>
+    </div>
+  </div>
+
+  <ul class="nav-links">
+    <li><a routerLink="/" class="nav-link active">Home</a></li>
+    <li><a routerLink="/" class="nav-link">About</a></li>
+    <li><a routerLink="/" class="nav-link">Services</a></li>
+    <li><a routerLink="/" class="nav-link">Portfolio</a></li>
+    <li><a routerLink="/" class="nav-link">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button class="icon-btn" title="Notifications">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+      </svg>
+      <span class="notification-dot"></span>
+    </button>
+    <div class="avatar">
+      <span>SK</span>
+    </div>
+  </div>
+</nav>
